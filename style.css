@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+}
+
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 86px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.parallax {
+  background-color: black;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero {
+  background-color: black;
+  min-height: 100vh;
+  /* background-image: url(./img/teaser3.jpg); */
+}
+
+.hero-info {
+  position: absolute;
+  float: left;
+  left: 4%;
+  bottom: 8vw;
+  color: white;
+  width: 35vw;
+}
+
+.line {
+  background-color: white;
+  height: 1px;
+  width: 10rem;
+}
+
+.hero-title {
+  font-weight: 400;
+  line-height: 0.9;
+  padding: 1.8rem 1.3rem 0 0;
+}
+
+.hero-description p {
+  font-weight: 600;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 50px;
+  background-color: #1c1f26;
+  opacity: 0.85;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link a {
+  font-size: 1.1rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 1.5rem;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-list a:hover {
+  color: lightgrey;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  width: 100%;
+}
+
+.section-about {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  margin: auto;
+  width: 50%;
+}
+
+.about-description {
+  font-size: 20px;
+}
+
+.about-card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-card {
+  width: 300px;
+  padding: 2rem 0;
+}
+
+.about-card img {
+  width: 300px;
+}
+
+.about-card h5 {
+  font-size: 12px;
+  color: darkgrey;
+}
+
+.about-card p {
+  font-size: 10px;
+}
+
+.pattern {
+  background-image: url(./img/pattern.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.quote {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-text {
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  z-index: 10;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quotation {
+  font-size: 5rem;
+}
+
+@media (max-width: 568px) {
+  parallax {
+    background-attachment: scroll;
+  }
+}
