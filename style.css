@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2 {
   font-family: "Bebas Neue", sans-serif;
@@ -46,7 +50,7 @@ p {
 .hero {
   background-color: black;
   min-height: 100vh;
-  /* background-image: url(./img/teaser3.jpg); */
+  background-image: url(./img/teaser3.jpg);
 }
 
 .hero-info {
@@ -114,7 +118,7 @@ p {
   width: 100%;
 }
 
-.section-about {
+.section {
   height: 65vh;
   display: flex;
   flex-direction: column;
@@ -176,11 +180,11 @@ p {
 }
 
 .logo {
-  position: absolute;
-  z-index: 10;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 0;
+  top: 4%;
+  left: 4%;
+  /* transform: translate(-50%, -50%); */
 }
 .quotation {
   font-size: 5rem;
